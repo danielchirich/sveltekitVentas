@@ -52,6 +52,10 @@
       <a class="bg-white inline-block py-2 px-4 text-gray-500 hover:text-blue-500 font-semibold" href="/formulario">Cargar Venta</a>
     </li>
     <li class="mr-1">
+      <a class="bg-white inline-block py-2 px-4 text-gray-500 hover:text-blue-500 font-semibold" href="/modificarVenta">Modificar Venta</a>            
+    </li>
+  <li class="mr-1">
+    <li class="mr-1">
       <a class="bg-white inline-block py-2 px-4 text-gray-500 hover:text-blue-500 font-semibold" href="/formPagos">Cargar Pago</a>
     </li>
     <li class="mr-1">
@@ -123,6 +127,7 @@
           <table class="table-auto w-full text-left whitespace-no-wrap">
                                <thead>
                                   <tr>
+                                     <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 ">Id</th>
                                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 ">Fecha</th>
                                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Cantidad</th>                                
                                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Precio</th>                                
@@ -137,6 +142,7 @@
                            
                                <tbody>
                                    <tr>
+                                       <td class="px-4 py-3">{i.id}</td>
                                        <td class="px-4 py-3">{i.created_at}</td>
                                        <td class="px-4 py-3">{i.cantidad} unid.</td>
                                        <td class="px-4 py-3">{i.precio}</td>
