@@ -111,8 +111,8 @@
       <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Saldos</h2>
-          <p class="leading-relaxed text-base"> Total Facturas  <strong>{selected}</strong>: <strong>{totalFactura}</strong></p>
-          <p class="leading-relaxed text-base"> Total Pagos <strong>{selected}</strong>: <strong>{totalPagos}</strong></p>
+          <p class="leading-relaxed text-base"> Total Facturas  <strong>{selected}</strong>: <strong>{totalFactura.toFixed(2)}</strong></p>
+          <p class="leading-relaxed text-base"> Total Pagos <strong>{selected}</strong>: <strong>{totalPagos.toFixed(2)}</strong></p>
           
         </div>
         <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
@@ -132,7 +132,7 @@
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Saldo Total</h2>
-          <p class="leading-relaxed text-base"><strong>Saldo Total: {totalFactura - totalPagos}</strong></p>
+          <p class="leading-relaxed text-base"><strong>Saldo Total: {(totalFactura - totalPagos).toFixed(2)}</strong></p>
           
         </div>
       </div>
